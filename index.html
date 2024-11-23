@@ -4,7 +4,7 @@
   <meta name="viewport" 
       content="width=device-width, initial-scale=1.0">
   <style>
-    body{background-color:lightblue;}
+    body{background-color:lightgreen;}
     p{
       background-color:cyan;
       text-align:center;
@@ -12,6 +12,10 @@
   </style>
 </head>
 <body onload="next();">
+  <button onclick="alert('with');">with</button>
+  <button onclick="alert('without')">without</button>
+  
+  <br><br><br>
   <p id="q"></p>
   <input id="ans" type="text">
   <button onclick="check(document.getElementById('ans').value)">Check</button>
@@ -29,7 +33,7 @@
     function next(){
       let picked = Math.floor(Math.random()*73);
       RAns = Zs[picked];
-    document.getElementById('q').innertHTML = elements[picked];
+    document.getElementById('q').innerHTML = elements[picked];
     }
   </script>
 
