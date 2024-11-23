@@ -4,16 +4,17 @@
   <meta name="viewport" 
       content="width=device-width, initial-scale=1.0">
   <style>
-    body{background-color:powderblue;}
+    body{background-color:lightblue;}
     p{
       background-color:cyan;
       text-align:center;
     }
   </style>
 </head>
-<body onload="alert("%%");">
+<body onclick="alert("%%");">
   <p id="q"></p>
-  <input id="ans" type="text"><button onclick="check(document.getElementById('ans').value)">Check</button>
+  <input id="ans" type="text">
+  <button onclick="check(document.getElementById('ans').value)">Check</button>
 
   <script>
     const elements = ["H","He","Li","Be","B","C","N","O","F","Ne","Na","Mg","Al","Si","P","S","Cl","Ar","K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Ge","As","Se","Br","Kr","Rb","Sr","Y","Zr","Nb","Mo","Tc","Ru","Rh","Pd","Ag","Cd","In","Sn","Sb","Te","I","Xe","Cs","Ba","La","Nd","W","Re","Pt","Au","Hg","Tl","Pb","Bi","Po","At","Rn","Fr","Ra","Ac","U"];
