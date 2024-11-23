@@ -11,11 +11,16 @@
       padding:10px;
       font-size:200%;
     }
+    input{
+      padding:10px;
+      font-size:200%;
+      text-align:center;
+    }
   </style>
 </head>
 <body onload="next();">
   <p id="q"></p>
-  <input id="ans" type="text">
+  <div><input id="ans" type="text"></div>
   <button onclick="check(document.getElementById('ans').value)">Check</button>
 
   <script>
