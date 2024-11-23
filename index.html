@@ -6,16 +6,14 @@
   <style>
     body{background-color:lightgreen;}
     p{
-      background-color:cyan;
+      background-color:yellow;
       text-align:center;
+      padding:10px;
+      font-size:200%;
     }
   </style>
 </head>
 <body onload="next();">
-  <button onclick="alert('with');">with</button>
-  <button onclick="alert('without')">without</button>
-  
-  <br><br><br>
   <p id="q"></p>
   <input id="ans" type="text">
   <button onclick="check(document.getElementById('ans').value)">Check</button>
