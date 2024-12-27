@@ -11,6 +11,13 @@
   <p>this is a paragraph</p>
   <span><button>spaneb</button></span>
   <button>normal b</button>
-  <button>anothernb</button>
+  <button onclick="sss()">anothernb</button>
+
+  <script>
+    function sss(){
+      const ss = new SpeechSynthesisUtterance("hello world");
+      window.speechSynthesis.speak(ss);
+  </script>
+  
 </body>
 </html>
